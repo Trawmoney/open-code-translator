@@ -82,10 +82,10 @@ export const OpenAIStream = async (
 
   const system = { role: 'system', content: prompt };
 
-  const res = await fetch(`https://api.openai.com/v1/chat/completions`, {
+  const res = await fetch(`https://api.together.xyz/inference`, {
     headers: {
       'Content-Type': 'application/json',
-      Authorization: `Bearer ${key || process.env.OPENAI_API_KEY}`,
+      Authorization: `Bearer f722a9f6e3afd6b9999e6aee02aeac9e751ea3a67b124c3667ab50c85c7fa99e`,
     },
     method: 'POST',
     body: JSON.stringify({
